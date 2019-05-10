@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<!Project Name: Pacific Trails Resort Web Site (HW30) <br>
+<!Author: Cassidy Bridgham <br>
+<!Date Last Modified: 5/10/19 <br>
+<!Comments:<br>
+<body>
+<div id="wrapper">
+<head>
+<title>Pacific Trails Reservations</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="pacific.css">
+</head>
+<header>
+<h1> Pacific Trails Resort</h1>
+</header>
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="yurts.html">Yurts</a> </li>
+<li><a href="activities.html">Activites</a></li>
+<li><a href="reservations.html">Reservations</a></li>
+</ul>
+</nav>
+<main>
+<br>
+<br>
+<h2>Reservations at Pacific Trails</h2>
+<h3>Contact Us</h3>
+<p> Required information is marked with an asterisk (*).</p>
+<form method="post" action="http://webdevbasics.net/scripts/pacific.php">
+<label for="myFName">* First Name: </label>
+	<input type="text" name="myFName" id="myFName"
+	required="required">
+<label for="myLName">* Last Name: </label>
+	<input type="email" name="myLName" id="myLName"
+	required="required">
+<label for="myEmail">* Email: </label>
+	<input type="text" name="myEmail" id="myEmail"
+	required="required">
+<label for="myPhone">* Phone: </label>
+	<input type="tel" name="myPhone" id="myPhone"
+	required="required">
+<label for="myDates"> Arrival Date:</label>
+	<input type="date" name="myDates" id="myDates">
+<label for="myNights"> Nights:</label>
+	<input type="number" name="myNights id="myNights" 
+	min="1" max="14">
+<label for="myComments">* Comments:</label>
+	<textarea name="myComments" rows="2" cols="20"
+	 id="myComments" required="required"></textarea>
+<input id="mySubmit" type="submit" value="Submit">
+</form>
+</main>
+<footer>
+Copyright &copy; 2018 Pacific Trails Resort<br>
+<a href="mailto:cjbridgh@my.loyno.edu"> Click here to email us!</a>
+</footer>
+</div>
+</body>
+</html>
